@@ -1,0 +1,95 @@
+body{
+    background-color: #898989;
+}
+
+.container .heading{
+    width: 80%;
+    padding-bottom:50px ;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    color:#898989;
+  }
+  .container{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  .container .heading h3 {
+    font-size:3em;
+    color:rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    margin-top: 50px;
+  }
+  .container .heading h3 span {
+    
+    padding-bottom:10px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  
+  
+  .container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .container .box .dream{
+    display: dlex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .container .box .dream img{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px; 
+    border: 2px solid rgb(0, 0, 0);
+    border-bottom :4px 7px 7px 0 rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 3px;
+    transition: 500ms
+  }
+  .container .box .dream img:hover{
+    filter:grayscale(1);
+    transform: scale(1.);
+    
+  }
+  .container .btn
+  {
+    margin: 40px 0 70px 0 ;
+    background:#ffffff;
+    padding: 15px 40px;
+    border-radius:  5px;
+  }
+  .container .btn a
+  {
+    color: black;
+    font-weight: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  @media only screen and (max-width:643x ) {
+    .container .box{
+    flex-direction:column;
+  }
+  .container .box .dream{
+    
+    width: 100%;
+  }
+  }
+  
+  
+  @media only screen and (max-width:643x ) {
+    .container .heading{
+    width: 50%;
+  }
+    .container .heading h3{
+    font-size:1em;
+    
+  }
+  
+  }
